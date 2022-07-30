@@ -26,5 +26,6 @@ buttons.addEventListener("click", (e) => {
         }
   }
   if(e.target.classList.contains("btn-clear")){
+    txtArea.value = "";
   }
 });

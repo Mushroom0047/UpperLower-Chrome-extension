@@ -1,7 +1,7 @@
 {
     "name": "UpperLower",
-    "description": "Cambia un texto a mayúsculas, minúscular o capitalizado de manera rápida",
-    "version": "1.0",
+    "description": "Cambia un texto a mayúsculas y minúscular de manera rápida",
+    "version": "1.0.1",
     "action":{
         "default_popup": "popup.html"
     },
