@@ -1,0 +1,36 @@
+body{
+    background-color: #3A3A3A;
+    color: #fff;
+    font-family: "Open Sans";
+}
+
+textarea{
+    height: 100px;
+    resize: vertical;
+    width: 300px;
+}
+textarea:focus{
+    outline: solid 1px #DFAC13;
+}
+.sect__buttons{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+.sect__buttons button{
+    background-color: #DFAC13;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 5px;
+    margin: 5px;
+    width: 100%;
+}
+.btn-clear{
+    background-color: #bf0f0f !important;
+}
+.dev{
+    text-align: center;
+    font-size: 12px;
+}
