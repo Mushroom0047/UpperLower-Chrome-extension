@@ -37,6 +37,23 @@ buttons.addEventListener("click", (e) => {
         txtArea.select();
     }
   }
+  //Capitalize All
+  if(e.target.classList.contains("btn-capAll")){
+    replaceText = txtArea.value;
+    const words = replaceText.split(' ');
+    const capitalizeWords = words.map(word => {
+      if (word.length > 0) {
+        return word[0].toUpperCase() + word.slice(1);
+      } else {
+        return '';
+      }
+    });
+    const res = capitalizeWords.join(' ');
+    txtArea.value = res;
+    txtArea.focus();
+    txtArea.select();
+  }
+
 
   //Clear
   if(e.target.classList.contains("btn-clear")){
