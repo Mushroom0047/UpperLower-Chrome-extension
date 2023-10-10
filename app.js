@@ -19,6 +19,7 @@ buttons.addEventListener("click", (e) => {
         txtArea.value = str;
         txtArea.focus();
         txtArea.select();
+        copyText(e);
     }
   }
   //mayusculas
@@ -29,6 +30,7 @@ buttons.addEventListener("click", (e) => {
             txtArea.value = str;
             txtArea.focus();
             txtArea.select();
+            copyText(e);
         }
   }
 
@@ -41,6 +43,7 @@ buttons.addEventListener("click", (e) => {
         txtArea.value = str;
         txtArea.focus();
         txtArea.select();
+        copyText(e);
     }
   }
   //Capitalize All
@@ -58,6 +61,7 @@ buttons.addEventListener("click", (e) => {
     txtArea.value = res;
     txtArea.focus();
     txtArea.select();
+    copyText(e);
   }
 
 
@@ -67,3 +71,16 @@ buttons.addEventListener("click", (e) => {
   }
 
 });
+
+function copyText(e){
+  try {
+    document.execCommand("copy");
+    let txt = e.target.textContent;
+    e.target.textContent = "Copied !";
+    setTimeout(function() {
+      e.target.textContent = txt;
+    }, 2000); // 2 segundos
+  } catch (err) {
+    console.error("No se pudo copiar el texto al portapapeles: ", err);
+  }
+}
