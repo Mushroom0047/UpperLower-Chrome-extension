@@ -65,7 +65,6 @@ buttons.addEventListener("click", (e) => {
   }
 
 });
-
 function copyText(e){
   try {
     document.execCommand("copy");
