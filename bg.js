@@ -1,0 +1,1 @@
+chrome.runtime.setUninstallURL('https://forms.gle/RrjQJ5BmxHzmXzrY8');

@@ -1,7 +1,7 @@
 {
-    "name": "UpperLower",
+    "name": "Upper Lower",
     "description": "Change a text to uppercase and lowercase quickly and easily",
-    "version": "1.2.3",
+    "version": "1.2.5",
     "action":{
         "default_popup": "popup.html",
         "default_title": "Paste the text and convert it", 
@@ -12,6 +12,9 @@
             "128": "/images/get_started128.png"
         }
     },
+    "background": {
+        "service_worker": "bg.js"
+      },
     "manifest_version": 3,
     "author": "Mu$hrooM"
 }
