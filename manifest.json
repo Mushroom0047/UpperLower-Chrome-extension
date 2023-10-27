@@ -12,6 +12,17 @@
             "128": "/images/get_started128.png"
         }
     },
+    "permissions":[
+        "contextMenus",
+        "tabs",
+        "activeTab",
+        "scripting"
+    ],
+    "icons": {
+        "16": "/images/get_started16.png",        
+        "48": "/images/get_started48.png",
+        "128": "/images/get_started128.png"
+    },
     "background": {
         "service_worker": "bg.js"
       },
