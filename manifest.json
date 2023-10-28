@@ -16,7 +16,8 @@
         "contextMenus",
         "tabs",
         "activeTab",
-        "scripting"
+        "scripting",
+        "storage"
     ],
     "icons": {
         "16": "/images/get_started16.png",        
