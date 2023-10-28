@@ -1,7 +1,7 @@
 {
     "name": "Upper Lower",
     "description": "Change a text to uppercase and lowercase quickly and easily",
-    "version": "1.3.5",
+    "version": "1.3.6",
     "action":{
         "default_popup": "popup.html",
         "default_title": "Paste the text and convert it",
@@ -10,22 +10,14 @@
             "32": "/images/get_started32.png",
             "48": "/images/get_started48.png",
             "128": "/images/get_started128.png"
-<<<<<<< HEAD
           }
-=======
-          }      
->>>>>>> dev
     },
     "permissions":[
         "contextMenus",
         "tabs",
         "activeTab",
-<<<<<<< HEAD
         "scripting",
         "storage"
-=======
-        "scripting"
->>>>>>> dev
     ],
     "icons": {
         "16": "/images/get_started16.png",        
