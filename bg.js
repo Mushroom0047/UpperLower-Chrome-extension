@@ -57,8 +57,6 @@ function createContextMenu(contextMenuId) {
     parentId: contextMenuId,
   });
 }
-
-  
   chrome.contextMenus.onClicked.addListener(function (info, tab) {
     if (info.menuItemId === "option1" || info.menuItemId === "option2" || info.menuItemId === "option3" || info.menuItemId === "option4") {
       // Enviar un mensaje al script de contenido para que realice la operación en el DOM de la página
