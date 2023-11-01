@@ -25,7 +25,7 @@ chrome.runtime.onInstalled.addListener(() => {
 function createContextMenu(contextMenuId) {
   chrome.contextMenus.create({
     id: contextMenuId,
-    title: "UpperLower | Text converter",
+    title: "Upper Lower | Text case converter",
     contexts: ["all"],
   });
 
