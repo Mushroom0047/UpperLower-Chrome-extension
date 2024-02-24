@@ -1,7 +1,7 @@
 {
     "name": "Upper Lower - text case converter",
     "description": "Change a text to uppercase and lowercase quickly and easily",
-    "version": "1.3.8",
+    "version": "1.4.0",
     "action":{
         "default_popup": "popup.html",
         "default_title": "Paste the text and convert it",

@@ -1,6 +1,9 @@
 let txtArea = document.querySelector(".txt-to-trans");
 let buttons = document.querySelector(".sect__buttons");
+let version = document.querySelector(".version");
 let replaceText = "";
+
+version.textContent = 'v1.4.0'
 
 buttons.addEventListener("click", (e) => {
   e.stopPropagation();
@@ -42,7 +45,7 @@ buttons.addEventListener("click", (e) => {
   }
   //Capitalize All
   if(e.target.classList.contains("btn-capAll")){
-    replaceText = txtArea.value;
+    replaceText = txtArea.value.toLowerCase();
     const words = replaceText.split(' ');
     const capitalizeWords = words.map(word => {
       if (word.length > 0) {
@@ -71,9 +74,11 @@ function copyText(e){
   try {
     document.execCommand("copy");
     let txt = e.target.textContent;
+    let originalImage = e.target.querySelector('.button-icon').outerHTML;
+
     e.target.textContent = "Copied !";
     setTimeout(function() {
-      e.target.textContent = txt;
+      e.target.innerHTML = originalImage + txt;
     }, 2000); // 2 segundos
   } catch (err) {
     console.error("No se pudo copiar el texto al portapapeles: ", err);
