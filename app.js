@@ -3,7 +3,7 @@ let buttons = document.querySelector(".sect__buttons");
 let version = document.querySelector(".version");
 let replaceText = "";
 
-version.textContent = 'v1.4.0'
+version.textContent = 'v1.4.2'
 
 buttons.addEventListener("click", (e) => {
   e.stopPropagation();
