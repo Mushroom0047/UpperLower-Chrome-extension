@@ -55,6 +55,7 @@ textarea{
     height: 100px;
     resize: vertical;
     width: 300px;
+    max-height: 250px;
     border-color: var(--secondary-color);
 }
 textarea:focus{
@@ -117,8 +118,10 @@ textarea::selection {
     padding: 0px;
     align-items: center;
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 .developed-by div a{
+    color: var(--white);
     transition: all 0.3s ease;
 }
 .developed-by div a:hover{
@@ -152,6 +155,7 @@ textarea::selection {
     text-align: right;
 }
 .version{
+    color: var(--white);
     font-size: 10px;
     padding: 0px;
     line-height: 0px;
