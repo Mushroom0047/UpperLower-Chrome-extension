@@ -1,9 +1,11 @@
 let txtArea = document.querySelector(".txt-to-trans");
-let buttons = document.querySelector(".sect__buttons");
-let version = document.querySelector(".version");
+const buttons = document.querySelector(".sect__buttons");
+const version = document.querySelector(".version");
+let charCount = document.getElementById('charCount');
+
 let replaceText = "";
 
-version.textContent = 'v1.4.3'
+version.textContent = 'v1.4.4'
 
 buttons.addEventListener("click", (e) => {
   e.stopPropagation();
@@ -85,3 +87,7 @@ function copyText(e){
   }
 }
 
+//Counter characters
+txtArea.addEventListener('input', () => {
+    charCount.textContent = txtArea.value.length;
+});

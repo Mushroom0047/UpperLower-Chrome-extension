@@ -51,12 +51,28 @@ hr{
     margin: auto 0px;
     padding: 0px 20px;
 }
+
+/*TEXT AREA*/
+#charCount {
+    position: absolute;
+    bottom: 10px; /* Ajusta según la necesidad */
+    right: 10px; /* Ajusta según la necesidad */
+    background: rgba(255, 255, 255, 0.7); /* Fondo semitransparente para mayor legibilidad */
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 12px; /* Ajusta el tamaño de la fuente según la necesidad */
+}
+.textarea-container {
+    position: relative;
+    display: inline-block;
+}
 textarea{
     height: 100px;
     resize: vertical;
     width: 300px;
     max-height: 250px;
     border-color: var(--secondary-color);
+    box-sizing: border-box;
 }
 textarea:focus{
     outline: solid 1px var(--main-color);
@@ -88,17 +104,17 @@ textarea::selection {
     gap: 5px;
     justify-content: center;
     padding: 10px 5px;
-    transition: all 0.4s;
+    transition: all 0.3s;
     width: 100%;
 }
 .sect__buttons button:hover{
-    transition: all 0.4s;
+    transition: all 0.3s;
     background-color: var(--secondary-color);
     color: var(--white);
 }
 .sect__buttons button:hover img{
     filter: brightness(0) invert(1) !important;
-    transition: all 0.4s;
+    transition: all 0.3s;
 }
 .sect__buttons button img{
     transition: all 0.4s;
